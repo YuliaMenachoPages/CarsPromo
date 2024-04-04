@@ -1,0 +1,16 @@
+@import './abstract/placeholders';
+@import '../styles/abstract/constants';
+@import './abstract/mixins';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+
+  @extend %font-display;
+  main {
+    flex: 1 0 auto;
+  }
+}

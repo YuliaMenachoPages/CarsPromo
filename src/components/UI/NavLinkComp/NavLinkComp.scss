@@ -1,0 +1,19 @@
+.navLinkWrapper {
+    transition: opacity 0.3s;
+}
+
+.navLinkWrapper:hover {
+    opacity: 0.8;
+}
+
+.navLinkWrapper:active {
+    opacity: 0.6;
+}
+
+.navLink {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
