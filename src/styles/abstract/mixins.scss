@@ -1,3 +1,17 @@
 @import './placeholders';
 @import './constants';
 
+  @mixin icon {
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+}
+
+@mixin title {
+  @extend %font-display;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+  color: $darkGrey;
+}

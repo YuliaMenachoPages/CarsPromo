@@ -6,11 +6,13 @@ import Contacts from "../Contacts/Contacts.tsx";
 function Header() {
     return (
         <header className="header">
-<div>
-    <Logo />
-    <Navigation />
-</div>
-<Contacts />
+            <div className="header__wrapper">
+                <div className="header__nav">
+                    <Logo/>
+                    <Navigation/>
+                </div>
+            </div>
+            <Contacts/>
         </header>
     )
 }

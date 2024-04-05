@@ -7,8 +7,8 @@ const Logo = () => {
     navigate('/', {replace: true})
   }
   return (
-    <div>
-      <button onClick={goToMain} className="logo"></button>
+    <div className="logo">
+      <button onClick={goToMain} className="logo__button"></button>
     </div>
   );
 };
