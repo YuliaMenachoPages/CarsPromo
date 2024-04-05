@@ -15,6 +15,8 @@ export type TPromoBlock = {
 
 export type TContacts = {
     address: string,
+		latitude: string,
+		longitude: string,
     schedule: string,
 }
 
@@ -64,6 +66,8 @@ const PROMO_BLOCKS = [
 const CONTACTS = [
     {
         address: 'Олимпийский просп., 5, стр. 1, Москва',
+				latitude: '55.784395',
+				longitude: '37.622244',
         schedule: '9.00 - 21.00 (ежедневно)',
     },
 ]

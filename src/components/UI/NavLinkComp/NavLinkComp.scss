@@ -1,3 +1,6 @@
+@import '../../../styles/abstract/placeholders';
+@import '../../../styles/abstract/constants';
+
 .navLinkWrapper {
     transition: opacity 0.3s;
 }
@@ -11,8 +14,14 @@
 }
 
 .navLink {
-    text-decoration: none;
-    cursor: pointer;
+  @extend %font-display;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: $grey;
 }
 
 
