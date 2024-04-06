@@ -1,24 +1,31 @@
 @import '../../../../styles/abstract/constants';
 @import '../../../../styles/abstract/mixins';
+@import '../../../../styles/abstract/placeholders';
+
 
 .button {
-  border: none;
+  @extend %font-display;
+  border: 1px solid $white;
   background-color: transparent;
-  transition: opacity 0.3s;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 21px;
+  transition: all 0.3s;
   margin: 0;
-  padding: 0;
+  padding: 14px 28px;
+  border-radius: $radiusButtonBordered;
   box-sizing: border-box;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  letter-spacing: 0.46px;
+  text-align: left;
+  color: $white;
 
   &:hover {
-    opacity: 0.7;
+    background-color: $whiteHover;
   }
 
   &:active {
-    opacity: 1;
+    opacity: 0.5;
   }
 
   &:disabled {
@@ -27,5 +34,11 @@
 
   &:disabled:hover {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button {
+    padding: 12px 24px;
   }
 }

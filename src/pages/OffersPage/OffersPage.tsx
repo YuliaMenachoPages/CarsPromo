@@ -1,10 +1,10 @@
-import PageTitle from '../../components/UI/PageTitle/PageTitle.tsx';
+import SectionTitle from "../../components/UI/SectionTitle/SectionTitle.tsx";
 
 function OffersPage() {
 
     return (
       <section className="items">
-        <PageTitle>Спецпредложения</PageTitle>
+        <SectionTitle>Спецпредложения</SectionTitle>
         <p>Здесь будет информация о спецпредложениях</p>
       </section>
     )

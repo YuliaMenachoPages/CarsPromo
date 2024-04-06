@@ -1,4 +1,10 @@
- // Шрифты
+@import '../../styles/abstract/constants';
+
+// Шрифты
   %font-display {
     font-family: 'Inter', Verdana, sans-serif;
   }
+ // Цвета
+ %block-gradient {
+   background: $lightGrey linear-gradient(to right, $gradientGrey 60%, $gradientBlack 100%);
+ }

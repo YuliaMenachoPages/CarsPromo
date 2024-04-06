@@ -1,4 +1,223 @@
 @import '../../styles/abstract/constants';
 @import '../../styles/abstract/mixins';
+@import '../../styles/abstract/placeholders';
 
 
+.item {
+  @extend %block-gradient;
+  padding: 32px;
+  border-radius: $radiusBlock;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item_type_1 {
+  grid-area: a;
+  background-size: 95%, cover;
+  background-position:
+          40% 97%,
+          0 0;
+  background-repeat: no-repeat;
+  background-image:
+  url("../../vendor/images/TwoCars.png"),
+  url("../../vendor/images/BG1.jpg");
+}
+
+.item_type_2 {
+  grid-area: b;
+  background-size: 72%, 46%, cover;
+  background-position:
+          150% 100%,
+          75% 100%,
+          0 0;
+  background-repeat: no-repeat;
+  background-image:
+  url("../../vendor/images/BlueCar.png"),
+  url("../../vendor/images/PlayGroup.png"),
+  url("../../vendor/images/BG2.jpg");
+}
+
+.item_type_3 {
+  grid-area: c;
+  background-size: 36%, cover;
+  background-position:
+          99% 100%,
+          0 0;
+  background-repeat: no-repeat;
+  background-image:
+  url("../../vendor/images/Mobile.png"),
+  url("../../vendor/images/BG3.jpg");
+}
+
+.item_type_4 {
+  grid-area: d;
+  background-size: 82%, 68%, 30%, cover;
+  background-position:
+          83% 96%,
+          0 100%,
+          22% 88%,
+          0 0;
+  background-repeat: no-repeat;
+  background-image:
+  url("../../vendor/images/Car.png"),
+  url("../../vendor/images/Ellipse.png"),
+  url("../../vendor/images/Search.svg"),
+  url("../../vendor/images/BG4.jpg");
+}
+
+.item__title {
+  @include blockTitle;
+  margin-bottom: 12px;
+  max-width: 338px;
+}
+
+.item__text {
+  @include blockText;
+  margin-bottom: 32px;
+  max-width: 338px;
+}
+
+@media screen and (max-width: 1199px) {
+  .item_type_1 {
+    background-size: 50%, cover;
+    background-position:
+            95% 105%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/TwoCars.png"),
+            url("../../vendor/images/BG1.jpg");
+  }
+
+  .item_type_2 {
+    background-size: 57%, cover;
+    background-position:
+            95% 100%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/BlueCar.png"),
+            url("../../vendor/images/BG2.jpg");
+  }
+
+  .item_type_3 {
+    background-size: 24%, cover;
+    background-position:
+            92% 100%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/Mobile.png"),
+            url("../../vendor/images/BG3.jpg");
+  }
+
+  .item_type_4 {
+    background-size: 48%, cover;
+    background-position:
+            97% 99%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/Car.png"),
+            url("../../vendor/images/BG4.jpg");
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .item {
+    justify-content: space-between;
+  }
+  .item_type_1 {
+    background-size: 42%, 100% 100%;
+    background-position:
+            95% 110%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/TwoCars.png"),
+            url("../../vendor/images/BG900.jpg");
+  }
+
+  .item_type_2 {
+    background-size: 42%, 100% 100%;
+    background-position:
+            95% 100%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/BlueCar.png"),
+            url("../../vendor/images/BG900.jpg");
+  }
+
+  .item_type_3 {
+    background-size: 19%, 100% 100%;
+    background-position:
+            92% 100%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/Mobile.png"),
+            url("../../vendor/images/BG900.jpg");
+  }
+
+  .item_type_4 {
+    background-size: 34%, 100% 100%;
+    background-position:
+            95% 99%,
+            0 0;
+    background-repeat: no-repeat;
+    background-image:
+            url("../../vendor/images/Car.png"),
+            url("../../vendor/images/BG4.jpg");
+  }
+  .item__title {
+    max-width: 280px;
+  }
+
+  .item__text {
+    max-width: 306px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    padding: 16px;
+}
+  .item_type_1 {
+    background-size: 42%, 100% 100%;
+    background-position:
+            95% 100%,
+            0 0;
+  }
+
+  .item_type_2 {
+    background-size: 45%, 100% 100%;
+    background-position:
+            99% 95%,
+            0 0;
+  }
+
+  .item_type_3 {
+    background-size: 22%, 100% 100%;
+    background-position:
+            92% 100%,
+            0 0;
+  }
+
+  .item_type_4 {
+    background-size: 38%, 100% 100%;
+    background-position:
+            95% 99%,
+            0 0;
+  }
+
+  .item__title {
+    max-width: 200px;
+    margin-bottom: 8px;
+  }
+  .item__text {
+    max-width: 285px;
+  }
+}
