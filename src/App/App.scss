@@ -1,6 +1,6 @@
 .page {
   max-width: 1920px;
-  min-width: 444px;
+  min-width: 360px;
 }
 
 .main {
@@ -8,4 +8,34 @@
   max-width: 1296px;
   width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+.main {
+  max-width: calc(100% - 150px);
+}
+}
+
+@media screen and (max-width: 1199px) {
+  .main {
+    max-width: calc(100% - 172px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    max-width: 852px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    max-width: calc(100% - 88px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    max-width: calc(100% - 40px);
+  }
 }

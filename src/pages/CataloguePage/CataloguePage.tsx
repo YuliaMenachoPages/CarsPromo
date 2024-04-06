@@ -1,10 +1,10 @@
-import PageTitle from '../../components/UI/PageTitle/PageTitle.tsx';
+import SectionTitle from "../../components/UI/SectionTitle/SectionTitle.tsx";
 
 function CataloguePage() {
 
     return (
       <section className="items">
-        <PageTitle>Автомобили в наличии</PageTitle>
+        <SectionTitle>Автомобили в наличии</SectionTitle>
         <p>Здесь будет каталог автомобилей</p>
       </section>
     )

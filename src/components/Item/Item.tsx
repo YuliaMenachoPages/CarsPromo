@@ -4,17 +4,20 @@ import {TPromoBlock} from "../../utils/consts/Consts.ts";
 
 interface IItemProps {
     block: TPromoBlock;
+    className: string;
 }
 
-function Item({ block }: IItemProps) {
+function Item({ block, className }: IItemProps) {
 
     const onClick = () => {
         console.log(block.action)
     }
     return (
-<div className="">
-    <h2 className="">{block.title}</h2>
-    <p className="">{block.text}</p>
+<div className={className}>
+    <div>
+    <h2 className="item__title">{block.title}</h2>
+    <p className="item__text">{block.text}</p>
+    </div>
     <BorderButton handleClick={onClick}>{block.actionText}</BorderButton>
 </div>
     )

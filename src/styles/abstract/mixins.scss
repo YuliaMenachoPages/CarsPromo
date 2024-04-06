@@ -1,17 +1,67 @@
 @import './placeholders';
 @import './constants';
 
-  @mixin icon {
+@mixin icon {
   width: 16px;
   height: 16px;
   background-size: contain;
 }
 
-@mixin title {
+@mixin titleText {
   @extend %font-display;
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
   text-align: left;
   color: $darkGrey;
+  margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+}
+
+@mixin navText {
+  @extend %font-display;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: $grey;
+  cursor: pointer;
+  margin: 0;
+}
+
+@mixin contactsText {
+  @extend %font-display;
+  color: $grey;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.5px;
+  text-align: left;
+}
+
+@mixin blockTitle {
+  @extend %font-display;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  color: $white;
+  margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+@mixin blockText {
+  @extend %font-display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+  color: $white;
 }
