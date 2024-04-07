@@ -3,7 +3,6 @@
 
 .header {
   width: 100%;
-  height: 106px;
   position: fixed;
   box-shadow: 0 4px 6px $shadowGrey;
   background-color: $white;
@@ -22,18 +21,33 @@
   padding: 6px 0;
 }
 
+@media screen and (max-width: 1440px) {
+  .header__nav {
+    max-width: calc(100% - 150px);
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .header__nav {
     max-width: calc(100% - 172px);
   }
 }
 
-
-@media screen and (max-width: 900px) {
-
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    max-width: 852px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 899px) {
+  .header__nav {
+    max-width: calc(100% - 88px);
+  }
+}
 
+@media screen and (max-width: 599px) {
+  .header__nav {
+    max-width: calc(100% - 40px);
+  }
 }
 

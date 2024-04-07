@@ -9,7 +9,7 @@
   background-color: transparent;
   transition: all 0.3s;
   margin: 0;
-  padding: 14px 28px;
+  padding: 14px 26px;
   border-radius: $radiusButtonBordered;
   box-sizing: border-box;
   cursor: pointer;
@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .button {
     padding: 12px 24px;
   }

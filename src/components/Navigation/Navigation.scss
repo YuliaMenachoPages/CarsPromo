@@ -1,3 +1,5 @@
+@import '../../styles/abstract/constants';
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -5,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 850px;
 }
 
 .navigation__wrapper {
@@ -26,59 +29,64 @@
   padding: 0;
 }
 
-.burger__items {
-    display: none;
+@media screen and (max-width: 1280px) {
+  .navigation {
+    width: 830px;
+  }
+
+  .navigation__buttonWrapper {
+    margin-left: auto;
+  }
 }
-//
-//@media screen and (max-width: 900px) {
-//    .hidden {
-//        display: none;
-//    }
-//
-//    .navigation__list {
-//        padding: 0;
-//        margin: 10px 0;
-//        gap: 30px;
-//    }
-//
-//    .burger__items {
-//        position: fixed;
-//        top: 0;
-//        right: 0;
-//        display: none;
-//        align-items: center;
-//        justify-content: flex-end;
-//        height: 100%;
-//        width: 100vw;
-//        transform: translate(0);
-//        padding: 0;
-//        margin: 0;
-//        transition: transform 0.5s ease-in-out;
-//        z-index: 2;
-//    }
-//
-//    .burger__items_active {
-//        display: block;
-//    }
-//
-//    .burger__list {
-//        position: fixed;
-//        top: 0;
-//        right: 0;
-//        list-style: none;
-//        display: flex;
-//        box-shadow: calc(-100vw + 520px) 0 rgba(0, 0, 0, 0.3);
-//        height: 100vh;
-//        width: 520px;
-//        flex-direction: column;
-//        align-items: center;
-//        justify-content: space-between;
-//        opacity: 1;
-//        z-index: 2;
-//        padding: 159px 0 90px 0;
-//        margin: 0;
-//        box-sizing: border-box;
-//    }
-//
-//}
-//
+
+@media screen and (max-width: 1199px) {
+  .navigation {
+    width: auto;
+    gap: 24px;
+  }
+    .burger__items {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .burger__items_active {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation__list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        list-style: none;
+        display: flex;
+        background-color: $white;
+        height: 100vh;
+        width: 340px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        opacity: 1;
+        z-index: 2;
+        padding: 100px 0 0 0;
+        margin: 0;
+        box-sizing: border-box;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 599px) {
+  .navigation__buttonWrapper {
+    display: none;
+  }
+}
+

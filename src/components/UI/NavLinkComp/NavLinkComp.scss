@@ -16,5 +16,13 @@
   @include navText;
  }
 
+@media screen and (max-width: 1199px) {
+  .navLinkWrapper {
+    padding: 10px;
+  }
 
+  .navLink {
+    font-size: 16px;
+  }
+}
 

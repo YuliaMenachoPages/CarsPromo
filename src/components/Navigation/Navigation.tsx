@@ -18,29 +18,19 @@ function Navigation() {
 
     return (
         <div className="navigation">
-                    <nav className="navigation__wrapper hidden">
+            <nav className={`navigation__wrapper hidden burger__items ${isMenuOpen && "burger__items_active"}`}>
                         <ul className="navigation__list">
                             {NAV_MENU?.map(item => (
                                 <li key={item.id} className="navigation__item">
-                                    <NavLinkComp children={item.text} direction={item.link}/>
+                                    <NavLinkComp children={item.text} direction={item.link} onClick={handleLinkClick}/>
                                 </li>
                             ))}
                         </ul>
-                        <ColoredButton>Заказать звонок</ColoredButton>
-                    </nav>
-            <div>
-            <nav className={`burger__items ${isMenuOpen && "burger__items_active"}`}>
-                        <ul className="burger__list">
-                            {NAV_MENU?.map(item => (
-                                <li key={item.id} className="navigation__item">
-                                    <NavLinkComp children={item.text} direction={item.link} onClick={handleLinkClick}
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-            </div>
-                    <Burger handleBurgerClick={handleBurgerClick} isMenuOpen={isMenuOpen}/>
+            </nav>
+            <div className="navigation__buttonWrapper">
+          <ColoredButton>Заказать звонок</ColoredButton>
+        </div>
+          <Burger handleBurgerClick={handleBurgerClick} isMenuOpen={isMenuOpen}/>
         </div>
     )
 }
