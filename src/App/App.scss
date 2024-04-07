@@ -11,9 +11,9 @@
 }
 
 @media screen and (max-width: 1440px) {
-.main {
-  max-width: calc(100% - 150px);
-}
+  .main {
+    max-width: calc(100% - 150px);
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -28,14 +28,16 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .main {
     max-width: calc(100% - 88px);
+    padding-top: 120px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .main {
     max-width: calc(100% - 40px);
+    padding-top: 100px;
   }
 }

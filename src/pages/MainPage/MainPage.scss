@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .items__container {
     grid-template-areas:
   "a"
@@ -32,7 +32,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .items__container {
     grid-template-rows: repeat(4, 194px);
     margin-top: 24px;
