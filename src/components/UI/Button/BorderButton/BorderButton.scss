@@ -37,8 +37,17 @@
   }
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1199px) {
   .button {
-    padding: 12px 24px;
+    padding: 0;
+    width: 148px;
+    height: 45px;
+    text-align: center;
   }
+}
+
+@media screen and (max-width: 599px) {
+  .button {
+  height: 42px;
+}
 }

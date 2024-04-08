@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 599px) {
+  .header {
+    width: 100vw;
+  }
   .header__nav {
     max-width: calc(100% - 40px);
   }
