@@ -9,3 +9,9 @@
     max-width: 603px;
   }
 }
+
+@media screen and (max-width: 599px) {
+  .items__title {
+    width: 95%;
+  }
+}

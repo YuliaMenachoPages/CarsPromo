@@ -79,6 +79,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .item {
+    justify-content: space-between;
+  }
   .item_type_1 {
     background-size: 50%, cover;
     background-position:
@@ -125,9 +128,6 @@
 }
 
 @media screen and (max-width: 899px) {
-  .item {
-    justify-content: space-between;
-  }
   .item_type_1 {
     background-size: 42%, 100% 100%;
     background-position:
@@ -214,8 +214,9 @@
   }
 
   .item__title {
-    max-width: 200px;
+    max-width: 225px;
     margin-bottom: 8px;
+    letter-spacing: 1.1px;
   }
   .item__text {
     max-width: 285px;
